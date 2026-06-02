@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+/* Glowing background animation */
+@keyframes glowBackground {
+  0% { background: radial-gradient(circle at 20% 30%, rgba(84, 219, 245, 0.2), rgba(0, 0, 0, 0.9)); }
+  50% { background: radial-gradient(circle at 80% 70%, rgba(162, 255, 120, 0.2), rgba(0, 0, 0, 0.9)); }
+  100% { background: radial-gradient(circle at 20% 30%, rgba(84, 219, 245, 0.2), rgba(0, 0, 0, 0.9)); }
+}
+
+.glow-bg {
+  animation: glowBackground 15s ease-in-out infinite;
+}
+
